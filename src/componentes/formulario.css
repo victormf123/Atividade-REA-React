@@ -1,0 +1,14 @@
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column-left{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.column-group{
+  align-items: flex-start;
+}
