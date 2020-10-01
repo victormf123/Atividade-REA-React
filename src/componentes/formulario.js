@@ -35,7 +35,7 @@ export default props => {
     }
     setINSS(inssSubt)
     setIRRF(irrfSubt)
-    result = parseFloat(salario - irrfSubt)
+    result = parseFloat(salario - irrfSubt - inssSubt)
     console.log('resultado: ', result)
     setSalarioComDescontos(result)
   }, [salario])
