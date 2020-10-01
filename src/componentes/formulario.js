@@ -18,8 +18,8 @@ export default props => {
       inssSubt = salario * 0.09
     }else if (salario >= 2089.61 && salario <= 3134.40) {
       inssSubt = salario * 0.12
-    }else if (salario >= 3134.41 && salario <= 6101.06) {
-      inssSubt = salario * 0.14
+    }else if (salario >= 3134.41 && salario >= 6101.06) {
+      inssSubt = Math.round((salario * 0.14) * 100) / 100
     }
 
     if(salario <= 1903.98 ){
